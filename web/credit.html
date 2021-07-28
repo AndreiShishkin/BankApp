@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>АИС Клиент-банк</title>
+  <link type="text/css" rel="stylesheet" href="css/credit.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9dab2f12ce.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<body>
+
+  <!--лого-->
+  <div class="container">
+    <div class="logo">
+      <table>
+        <tr>
+          <td><h1>АИС "Клиент-банк"</h1></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="main_menu">
+      <a class="menu_link" href="">Частным клиентам</a>
+      <a class="menu_link" href="">Бизнесу</a>
+    </div>
+
+    <!-- Горизонтальная линия между меню -->
+    <div class="line">
+      <hr></hr>
+    </div>
+
+    <!-- Шапка меню-->
+    <div class="menu">
+      <a class="menu_link" href="credit.html">Кредит</a>
+      <a class="menu_link" href="card.html">Карты</a>
+      <a class="menu_link" href="">Ипотека</a>
+      <a class="menu_link" href="deposits.html">Вклады и счета</a>
+      <a class="menu_link" href="payments_&_transfers.html">Платежи и переводы</a>
+    </div>
+
+    <!-- Поисковая строка с кнопкой -->
+    <form class="search">
+      <input class="input" type="text" placeholder="Поиск по сайту" maxlength="27">
+      <button class="button" class="fas fa-search"></button>
+    </form>
+
+    <!-- Кнопка входа -->
+    <div>
+      <form action="login_form.html">
+      <button class="button_accept">Интернет-банк</button>
+    </form>
+    </div>
+  </div>
+
+<!-- Информация о кредите -->
+  <div class="container">
+    <div class="info">
+    <table class="table_info">
+      <tr>
+        <td align="center">
+          <div class="border_icon">
+            <div class="fa">
+              <i class="far fa-clock"></i>
+            </div>
+          </div>
+        </td>
+        <td align="center">
+          <div class="border_icon">
+            <div class="fa">
+              <i class="fas fa-ruble-sign"></i>
+            </div>
+          </div>
+        </td>
+        <td align="center">
+          <div class="border_icon">
+            <div class="fa">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><div>Онлайн решение</div></td>
+        <td align="center">До 5 млн рублей</td>
+        <td align="center">От 1 до 5 лет</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script src="js/credit.js"></script>
+
+
+<!-- Таблица расчета кредита -->
+<div class="container_credit">
+  <p align="center" class="title_credit">Рассчитайте кредит</p>
+  <table align="center" class="credit_table_style">
+    <tr>
+      <td>Сумма кредита</td>
+      <td align="right"><p id="sum"></p></td>
+      <td align="center">Ежемесячный платеж</td>
+    </tr>
+    <tr>
+      <td colspan="2"><input class="range_container" type="range" min="50000" max="5000000" step="10000" value="50000" id="size" oninput="sizeSum()"></td>
+        <td align="center" rowspan="2"><output id="month_pay"></></td>
+        </tr>
+        <tr>
+          <td>Срок кредита</td>
+          <td align="right"><p id="months"></p></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input class="range_container" type="range" min="24" max="60" step="12" value="24" id="time" oninput="quantity()"></td>
+          <td align="center"><button class="table_button">Оформить кредит</button></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"><button class="table_button" onclick="monthPay()">Рассчитать</button></td>
+        </tr>
+      </table>
+    </div>
+
+<!-- Преимущества кредита -->
+  <div class="ramka">
+  <div class="style_num">
+<span>1</span>
+</div>
+<div class="style_title">
+  <span>Оформите заявку</span>
+</div>
+<div class="style_text">
+  <span>Заполните анкету, чтобы оформить заявку онлайн</span>
+</div>
+
+<div class="style_num">
+<span>2</span>
+</div>
+<div class="style_title">
+<span>Дождитесь одобрения</span>
+</div>
+<div class="style_text">
+<span>Вышлем письмо, когда банк примет решение по заявке</span>
+</div>
+</div>
+</div>
+
+<!-- Форма заполнения заявки на кредит -->
+    <div class="container_credit1">
+    <div class="border_table">
+      <div class="meter_reading_name">
+        <p>Заявка на получение кредита</p>
+      </div>
+        <form action="checkSrv">
+          <table align="center" class="table">
+            <tr>
+              <td align="left">Сумма кредита</td>
+              <td align="right"><p id="sum1"></p></td>
+              <td align="left">Срок кредита</td>
+              <td align="right"><p id="months1"></p></td>
+              </tr>
+              <tr>
+<td align="left" colspan="2"><input class="range_container1" type="range" min="50000" max="5000000" step="10000" value="50000" id="size1" oninput="sizeSum1()">
+  </td>
+  <td align="left" colspan="2"><input class="range_container1" type="range" min="24" max="60" step="12" value="24" id="time1" oninput="quantity1()"></td>
+              </tr>
+            <tr>
+              <td colspan="2" align="left">Фамилия</td>
+              <td colspan="2" align="left">Дата рождения</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2"><input class="text_box_table" type="text" name=""></td>
+  <td align="left" colspan="2"><input class="text_box_table" type="text" name=""></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">Имя</td>
+                <td colspan="2" align="left">Номер телефона</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2"><input class="text_box_table" type="text" name=""></td>
+              <td align="left" colspan="2"><input class="text_box_table" type="text" name="login"></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">Отчество</td>
+                          <td colspan="2" align="left">E-mail</td>
+            </tr>
+                  <tr>
+              <td colspan="2" align="left"><input class="text_box_table" type="text" name=""></td>
+    <td colspan="2" align="left"><input class="text_box_table" type="text" name="pass"></td>
+            </tr>
+          </table>
+          <div class="but_reg">
+          <input class="button_reg" type="submit"  value="Отправить">
+        </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

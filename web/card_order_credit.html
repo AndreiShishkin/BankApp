@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>АИС Клиент-банк</title>
+  <link type="text/css" rel="stylesheet" href="css/card_order_credit.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9dab2f12ce.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<body>
+
+  <!--лого-->
+  <div class="container">
+    <div class="logo">
+      <table>
+        <tr>
+          <td><h1>АИС "Клиент-банк"</h1></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="main_menu">
+      <a class="menu_link" href="">Частным клиентам</a>
+      <a class="menu_link" href="">Бизнесу</a>
+    </div>
+    <!-- Горизонтальная линия между меню -->
+    <div class="line">
+      <hr></hr>
+    </div>
+
+    <!-- Шапка меню-->
+    <div class="menu">
+      <a class="menu_link" href="credit.html">Кредит</a>
+      <a class="menu_link" href="card.html">Карты</a>
+      <a class="menu_link" href="">Ипотека</a>
+      <a class="menu_link" href="deposits.html">Вклады и счета</a>
+      <a class="menu_link" href="payments_&_transfers.html">Платежи и переводы</a>
+    </div>
+
+    <!-- Поисковая строка с кнопкой -->
+    <form class="search">
+      <input class="input" type="text" placeholder="Поиск по сайту" maxlength="27">
+      <button class="button" class="fas fa-search" type="submit"></button>
+    </form>
+
+    <!-- Кнопка входа -->
+    <div>
+      <form action="login_form.html">
+      <button class="button_accept">Интернет-банк</button>
+    </form>
+    </div>
+  </div>
+
+  <script src="js/credit.js"></script>
+
+
+
+<!-- Оформление карты -->
+<div class="container_credit1">
+<div class="border_table">
+  <div class="meter_reading_name">
+    <p>Заявка на получение кредитной карты</p>
+  </div>
+    <form action="checkSrv">
+      <table align="center" class="table">
+        <tr>
+          <td colspan="3" align="left">Кредитный лимит</td>
+          <td align="right"><p id="sum"></p></td>
+          </tr>
+          <tr>
+            <td colspan="4"><input class="range_container" type="range" min="10000" max="1000000" step="10000" value="10000" id="size" oninput="sizeSum()"></td>
+          </tr>
+        <tr>
+          <td colspan="2" align="left">Фамилия</td>
+          <td colspan="2" align="left">Электронная почта</td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2"><input class="text_box_table" type="text" name=""></td>
+<td align="left" colspan="2"><input class="text_box_table" type="text" name=""></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left">Имя</td>
+            <td colspan="2" align="left">Серия паспорта</td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2"><input class="text_box_table" type="text" name=""></td>
+          <td align="left" colspan="2"><input class="text_box_table" type="text" name="login"></td>
+        </tr>
+        <tr>
+          <td align="left">Отчетсво</td>
+          <td align="right"><p id="sum1"></p></td>
+          <td align="left">Номер паспорта</td>
+          <td align="right"><p id="months1"></p></td>
+          </tr>
+              <tr>
+          <td colspan="2" align="left"><input class="text_box_table" type="text" name=""></td>
+<td colspan="2" align="left"><input class="text_box_table" type="text" name="pass"></td>
+        </tr>
+        <tr>
+          <td colspan="2">Номер телефона</td>
+          <td colspan="2">Дата выдачи</td>
+          </tr>
+        <tr>
+          <td colspan="2"><input class="text_box_table" type="text" name=""></td>
+          <td align="left" colspan="2"><input class="text_box_table" type="date" value="2021-06-01" max="2021-06-01" min="1995-01-01"></td>
+          </tr>
+      </table>
+      <div class="but_reg">
+      <input class="button_reg" type="submit"  value="Отправить">
+    </form>
+</div>
+</div>
+</body>
+</html>

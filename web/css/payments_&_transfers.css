@@ -1,0 +1,274 @@
+/*Контейнер для шапки сайта*/
+.container{
+width: 100%;
+max-width: 1880px;
+margin: 0 auto;
+}
+
+/*Стиль логотипа*/
+.logo{
+font-family: 'Noto Sans JP', sans-serif;
+  border: 2px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+  background-color: #fff;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  width: 280px;
+  font-size: 14px;
+  top: 35px;
+}
+
+/*Стиль верхней шапки*/
+.main_menu{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  right: 1348px;
+  top:20px;
+}
+
+/*Стиль навигационного меню*/
+.menu{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 55px;
+  right: 910px;
+  border: 2px;
+  margin: 0 0px;
+}
+
+/*Стиль линии меню*/
+.line{
+  position: relative;
+  top: -47px;
+  width: 1598px;
+  left: 281px;
+/*  top:43px;
+  width: 1598px;
+  right: 20px; */
+}
+
+/*Стиль ссылок меню*/
+.menu_link{
+  color: #000;
+  text-decoration: none;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+.menu_link:after{
+  background-color: #4169E1;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  -webkit-transition: .2s linear;
+  -moz--transition: .2s linear;
+  transition: .2s linear;
+}
+
+.menu_link:hover{
+color: #4169e1;
+}
+
+.menu_link:hover:after,
+.menu_link:focus:after {
+    width: 100%;
+  }
+
+/*Поисковая строка с кнопкой*/
+  .search {
+    font-family: 'Noto Sans JP', sans-serif;
+  position: absolute;
+  width: 300px;
+  top: 16px;
+  right: 250px;
+}
+.input, .button {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.input {
+      font-family: 'Noto Sans JP', sans-serif;
+  width: 100%;
+  height: 26px;
+  background: #4169E1;
+  padding-left: 15px;
+  color: #fff;
+  }
+  .input::placeholder{
+    color: #fff;
+  }
+.button {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 4px;
+  right: -5px;
+  background: #fff;
+  cursor: pointer;
+}
+.button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #4169E1;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Кнопка Интернет-банк*/
+.button_accept{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  padding: 0px 10px;
+color: #fff;
+height: 28.2px;
+width: 150px;
+position: absolute;
+top: 16px;
+right: 20px;
+background: #4169E1;
+border-color: #4169E1;
+cursor: pointer;
+border-radius: 10px;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+/*Заголовок таблицы*/
+  .meter_reading_name{
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  line-height: 10px;
+  }
+
+
+.container_cd{
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 1880px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Стиль ">"*/
+.btw{
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 60px;
+color: #808080;
+}
+
+/*Стиль для банковских карт*/
+  .container_card{
+    height: 250px;
+    width: 382px;
+    border: 1px;
+    border-radius: 10px;
+    background: #808080;
+    border-spacing: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      margin: 0 80px;
+  }
+
+  /*Размеры текстовых блоков в таблице*/
+  .text_box_table{
+    border-color: #808080;
+    border-radius: 5px;
+    width: 344px;
+    height: 65px;
+    font-size: 14px;
+  }
+
+  /*Размеры текстовых блоков в таблице*/
+  .text_box_table_low{
+    border-color: #808080;
+    border-radius: 5px;
+    width: 158px;
+    height: 65px;
+    font-size: 14px;
+  }
+
+  .button_reg{
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    left: 1230px;
+    top: 20px;
+    border-radius: 10px;
+    background: #4169E1;
+    border-color: #fff;
+    border-width: medium;
+    font-size: 18px;
+    color: #fff;
+    height: 50px;
+    width: 190px;
+    }
+
+/*----------------------------------------------------------------------*/
+
+.check_container{
+
+  display: flex;
+  justify-content: center;
+  align-items: ;
+}
+
+/*Заголовк перевод на счет*/
+.meter_reading_name1{
+  width: 930px;
+  font-family: 'Noto Sans JP', sans-serif;
+font-size: 30px;
+line-height: 10px;
+}
+
+/*Стиль для счета*/
+    .container_cd1{
+      font-family: 'Noto Sans JP', sans-serif;
+      width: 1880px;
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      margin: 0px 0;
+    }
+
+
+    /*Стиль для банковских карт*/
+      .container_card1{
+        height: 680px;
+        width: 382px;
+        border: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #808080;
+        border-spacing: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          margin: 0 100px;
+      }
+
+      .button_reg1{
+        font-family: 'Noto Sans JP', sans-serif;
+        position: relative;
+        left: 1230px;
+        bottom: 380px;
+        border-radius: 10px;
+        background: #4169E1;
+        border-color: #fff;
+        border-width: medium;
+        font-size: 18px;
+        color: #fff;
+        height: 50px;
+        width: 190px;
+        }
